@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DALA DAMI">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#d1b07a"/>
+      <stop offset="1" stop-color="#b99356"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#f7efe4"/>
+  <path d="M18 14h7c11 0 21 9 21 20s-10 20-21 20h-7V14zm7 6v28c8 0 15-6 15-14s-7-14-15-14z" fill="url(#g)"/>
+  <path d="M10 14h6v40h-6z" fill="url(#g)"/>
+</svg>

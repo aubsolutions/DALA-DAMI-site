@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg6" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f1e7d7"/>
+      <stop offset="1" stop-color="#d7c6a9"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg6)"/>
+  <circle cx="170" cy="500" r="115" fill="#ffffff" fill-opacity="0.3"/>
+  <rect x="120" y="130" width="560" height="340" rx="26" fill="#fffbf4"/>
+  <text x="400" y="280" text-anchor="middle" font-family="Georgia, serif" font-size="56" fill="#7a6142">ЭКО Бокс</text>
+  <text x="400" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#987a57">DALA DAMI</text>
+</svg>

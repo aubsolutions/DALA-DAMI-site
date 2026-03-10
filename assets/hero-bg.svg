@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 950" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#231f1b"/>
+      <stop offset="1" stop-color="#5a4738"/>
+    </linearGradient>
+    <radialGradient id="light" cx="0.75" cy="0.72" r="0.5">
+      <stop offset="0" stop-color="#d5aa72" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#d5aa72" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="950" fill="url(#bg)"/>
+  <rect width="1600" height="950" fill="url(#light)"/>
+
+  <rect x="420" y="450" width="980" height="340" rx="14" fill="#816045" transform="rotate(-8 910 620)"/>
+  <rect x="445" y="475" width="930" height="285" rx="10" fill="#9a7754" transform="rotate(-8 910 620)"/>
+
+  <g fill="#efe8df" filter="url(#blur)">
+    <ellipse cx="610" cy="610" rx="60" ry="36" transform="rotate(-10 610 610)"/>
+    <ellipse cx="715" cy="575" rx="62" ry="38" transform="rotate(-8 715 575)"/>
+    <ellipse cx="820" cy="545" rx="62" ry="38" transform="rotate(-7 820 545)"/>
+    <ellipse cx="930" cy="520" rx="62" ry="38" transform="rotate(-6 930 520)"/>
+    <ellipse cx="1040" cy="500" rx="62" ry="38" transform="rotate(-5 1040 500)"/>
+    <ellipse cx="560" cy="700" rx="62" ry="38" transform="rotate(-10 560 700)"/>
+    <ellipse cx="675" cy="670" rx="62" ry="38" transform="rotate(-8 675 670)"/>
+    <ellipse cx="790" cy="640" rx="62" ry="38" transform="rotate(-7 790 640)"/>
+    <ellipse cx="905" cy="610" rx="62" ry="38" transform="rotate(-5 905 610)"/>
+    <ellipse cx="1020" cy="580" rx="62" ry="38" transform="rotate(-4 1020 580)"/>
+    <ellipse cx="1130" cy="560" rx="62" ry="38" transform="rotate(-4 1130 560)"/>
+  </g>
+
+  <g fill="#efe8df" opacity="0.9">
+    <ellipse cx="210" cy="660" rx="86" ry="46"/>
+    <ellipse cx="350" cy="745" rx="92" ry="51"/>
+    <ellipse cx="150" cy="815" rx="78" ry="43"/>
+  </g>
+
+  <g opacity="0.6">
+    <path d="M285 165c35 0 62 28 62 62s-27 62-62 62-62-28-62-62 27-62 62-62z" fill="#cba35f"/>
+    <rect x="278" y="105" width="15" height="130" rx="7" fill="#e8c979"/>
+  </g>
+
+  <rect width="1600" height="950" fill="rgba(0,0,0,0.22)"/>
+</svg>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta id="metaDescription" name="description" content="DALA DAMI — натуральные продукты питания в стиле ЭКО и ЗОЖ. Каталог, корзина, заказ через email и WhatsApp.">
+  <title id="pageTitle">DALA DAMI — Натуральные продукты</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-bg" aria-hidden="true"></div>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="DALA DAMI">
+        <!-- Замените файл assets/logo-dala-dami.svg на ваш загруженный логотип при необходимости -->
+        <img src="assets/logo-dala-dami.svg" alt="Логотип DALA DAMI" class="brand__logo" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block';">
+        <span class="brand__fallback" style="display:none;">DALA DAMI</span>
+      </a>
+
+      <nav class="nav" aria-label="Главное меню">
+        <a href="#about" data-i18n="nav.about">О компании</a>
+        <a href="#catalog" data-i18n="nav.catalog">Каталог</a>
+        <a href="#benefits" data-i18n="nav.benefits">Преимущества</a>
+        <a href="#events" data-i18n="nav.events">Мероприятия</a>
+        <a href="#how-order" data-i18n="nav.howOrder">Как заказать</a>
+        <a href="#contact" data-i18n="nav.contacts">Контакты</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="btn btn--ghost" id="headerWhatsapp" href="#" target="_blank" rel="noopener">WhatsApp</a>
+        <button class="btn btn--accent cart-toggle" type="button" data-i18n-aria="header.openCartAria" aria-label="Открыть корзину">
+          <span data-i18n="header.cart">Корзина</span>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+      </div>
+
+      <div class="lang-switch" data-i18n-aria="lang.aria" aria-label="Выбор языка" role="group">
+        <button type="button" data-lang-btn="ru">RU</button>
+        <button type="button" data-lang-btn="en">EN</button>
+        <button type="button" data-lang-btn="kz">KZ</button>
+        <button type="button" data-lang-btn="zh">繁</button>
+      </div>
+
+      <button class="menu-toggle" type="button" id="menuToggle" data-i18n-aria="header.openMenuAria" aria-label="Открыть меню">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__shell">
+          <div class="hero__content">
+            <p class="hero__label" data-i18n="hero.label">ЭКО ПРОДУКТЫ DALA DAMI</p>
+            <h1 data-i18n="hero.title">Натуральные продукты премиального качества</h1>
+            <p data-i18n="hero.description">
+              Чистые составы, отборное сырье и аккуратное производство для осознанного питания
+              и ежедневного доверия к вашему выбору.
+            </p>
+            <div class="hero__actions">
+              <a href="#catalog" class="btn btn--primary" data-i18n="hero.catalogBtn">Перейти в каталог</a>
+              <button class="btn btn--ghost" type="button" data-open-order data-i18n="hero.orderBtn">Оформить заказ</button>
+            </div>
+          </div>
+
+          <div class="hero__stats" aria-hidden="true">
+            <article class="hero-stat">
+              <p class="hero-stat__value">100%</p>
+              <p data-i18n="hero.stat1">Натуральные ингредиенты и чистый состав</p>
+            </article>
+            <article class="hero-stat">
+              <p class="hero-stat__value">24/7</p>
+              <p data-i18n="hero.stat2">Прием заказов через сайт и WhatsApp</p>
+            </article>
+            <article class="hero-stat">
+              <p class="hero-stat__value" data-i18n="hero.stat3Value">ЭКО</p>
+              <p data-i18n="hero.stat3">Современный премиальный стиль и качество</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about">
+        <h2 data-i18n="about.title">О компании</h2>
+        <p data-i18n="about.text">
+          DALA DAMI — это бренд продуктов питания с фокусом на натуральность, пользу и стабильное качество.
+          Мы отбираем сырье, которое соответствует высоким стандартам чистоты и вкуса, чтобы каждый продукт
+          становился частью здорового рациона и уверенного выбора на каждый день.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="catalog">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="catalog.title">Каталог товаров</h2>
+          <button class="btn btn--accent cart-toggle" type="button" data-i18n="catalog.openCart">Открыть корзину</button>
+        </div>
+        <div class="catalog-grid" id="catalogGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="benefits">
+      <div class="container">
+        <h2 data-i18n="benefits.title">Преимущества DALA DAMI</h2>
+        <div class="benefits-grid">
+          <article>
+            <h3 data-i18n="benefits.item1Title">Натуральный состав</h3>
+            <p data-i18n="benefits.item1Text">Минимум лишних ингредиентов и максимум природной пользы.</p>
+          </article>
+          <article>
+            <h3 data-i18n="benefits.item2Title">Контроль качества</h3>
+            <p data-i18n="benefits.item2Text">Каждая партия проходит проверку на стабильность вкуса и безопасности.</p>
+          </article>
+          <article>
+            <h3 data-i18n="benefits.item3Title">Современный подход</h3>
+            <p data-i18n="benefits.item3Text">Удобный формат заказа, понятный сервис и быстрая обратная связь.</p>
+          </article>
+          <article>
+            <h3 data-i18n="benefits.item4Title">Премиальный стиль</h3>
+            <p data-i18n="benefits.item4Text">Эстетика бренда, которой приятно доверять и делиться.</p>
+          </article>
+          <article>
+            <h3 data-i18n="benefits.item5Title">Для семьи и бизнеса</h3>
+            <p data-i18n="benefits.item5Text">Подходит для личных покупок, офисов и партнерских поставок.</p>
+          </article>
+          <article>
+            <h3 data-i18n="benefits.item6Title">Поддержка в WhatsApp</h3>
+            <p data-i18n="benefits.item6Text">Быстро согласуем состав заказа, доставку и удобный способ оплаты.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="events">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="events.title">Мероприятия</h2>
+          <div class="events-controls">
+            <button class="btn btn--ghost events-nav" type="button" data-event-nav="prev" data-i18n-aria="events.prevAria" aria-label="Предыдущее мероприятие">←</button>
+            <button class="btn btn--ghost events-nav" type="button" data-event-nav="next" data-i18n-aria="events.nextAria" aria-label="Следующее мероприятие">→</button>
+          </div>
+        </div>
+        <p class="events-lead" data-i18n="events.lead">
+          Участие DALA DAMI в локальных и международных выставках, ярмарках и профильных событиях.
+        </p>
+        <div class="events-carousel">
+          <div class="events-track" id="eventsGrid"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="partners">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="partners.title">Нам доверяют</h2>
+        </div>
+        <p class="partners-lead" data-i18n="partners.lead">
+          Партнеры и компании, с которыми DALA DAMI уже работает по поставкам и совместным проектам.
+        </p>
+        <div class="partners-grid" id="partnersGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="how-order">
+      <div class="container">
+        <h2 data-i18n="howOrder.title">Как заказать</h2>
+        <ol class="steps">
+          <li data-i18n="howOrder.step1">Выберите товары в каталоге и добавьте их в корзину.</li>
+          <li data-i18n="howOrder.step2">Откройте корзину и проверьте количество позиций.</li>
+          <li data-i18n="howOrder.step3">Нажмите «Оформить заказ» и заполните короткую форму.</li>
+          <li data-i18n="howOrder.step4">Мы получим заявку на email и свяжемся для подтверждения.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="order-form">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="form.sectionTitle">Форма заказа</h2>
+          <button class="btn btn--primary" type="button" data-open-order data-i18n="form.openModalBtn">Открыть в модальном окне</button>
+        </div>
+        <form class="order-form" data-order-form>
+          <input type="hidden" name="order_items" data-order-items>
+          <div class="form-grid">
+            <label>
+              <span data-i18n="form.nameLabel">Ваше имя</span>
+              <input type="text" name="name" required data-i18n-placeholder="form.namePlaceholder" placeholder="Например, Айдана">
+            </label>
+            <label>
+              <span data-i18n="form.phoneLabel">Номер телефона</span>
+              <input type="tel" name="phone" required placeholder="+7 (___) ___-__-__" data-phone>
+            </label>
+            <label>
+              <span data-i18n="form.companyLabel">Компания</span>
+              <input type="text" name="company" data-i18n-placeholder="form.companyPlaceholder" placeholder="Название компании (если есть)">
+            </label>
+            <label>
+              <span data-i18n="form.deliveryLabel">Нужна доставка</span>
+              <select name="delivery" required>
+                <option value="yes" data-i18n-option="form.deliveryYes">Да</option>
+                <option value="no" data-i18n-option="form.deliveryNo">Нет</option>
+              </select>
+            </label>
+          </div>
+          <label>
+            <span data-i18n="form.commentLabel">Комментарий</span>
+            <textarea name="comment" rows="4" data-i18n-placeholder="form.commentPlaceholder" placeholder="Уточнения по заказу и доставке"></textarea>
+          </label>
+          <label>
+            <span data-i18n="form.cartLabel">Состав корзины</span>
+            <textarea rows="5" readonly data-cart-preview></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="btn btn--accent" type="submit" data-i18n="form.sendBtn">Отправить заказ на email</button>
+            <a class="btn btn--ghost" id="orderWhatsapp" href="#" target="_blank" rel="noopener" data-i18n="form.whatsappBtn">Заказать через WhatsApp</a>
+          </div>
+          <p class="form-message" data-form-message aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contacts">
+        <h2 data-i18n="contacts.title">Контакты</h2>
+        <div class="contacts-grid">
+          <a href="tel:+77012503020"><span data-i18n="contacts.phoneLabel">Телефон</span>: +7 (701) 250-30-20</a>
+          <a id="contactWhatsapp" href="#" target="_blank" rel="noopener" data-i18n="contacts.whatsappLabel">WhatsApp: написать в чат</a>
+          <a href="mailto:dala.dami.2023@gmail.com"><span data-i18n="contacts.emailLabel">Email</span>: dala.dami.2023@gmail.com</a>
+          <p><span data-i18n="contacts.addressLabel">Адрес</span>: <span data-i18n="contacts.addressValue">г. Астана, Е 429, д 14, нп 4</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>
+        <span data-i18n="footer.copyMark">©</span>
+        <span id="currentYear"></span>
+        <span data-i18n="footer.copyText">DALA DAMI. Натуральные продукты питания.</span>
+      </p>
+      <a href="#top" data-i18n="footer.toTop">Наверх</a>
+    </div>
+  </footer>
+
+  <button class="mobile-cart cart-toggle" type="button" data-i18n-aria="header.openCartAria" aria-label="Открыть корзину">
+    <span data-i18n="header.cart">Корзина</span>
+    <span class="cart-badge" id="mobileCartBadge">0</span>
+  </button>
+
+  <div class="modal" id="productModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__panel">
+      <button class="modal__close" type="button" data-close-modal aria-label="Закрыть">✕</button>
+      <div id="productModalBody"></div>
+    </div>
+  </div>
+
+  <div class="modal" id="eventModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__panel">
+      <button class="modal__close" type="button" data-close-modal aria-label="Закрыть">✕</button>
+      <div id="eventModalBody"></div>
+    </div>
+  </div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-drawer__backdrop cart-toggle"></div>
+    <div class="cart-drawer__panel">
+      <div class="cart-drawer__head">
+        <h3 data-i18n="cart.title">Ваша корзина</h3>
+        <button class="modal__close cart-toggle" type="button" aria-label="Закрыть">✕</button>
+      </div>
+      <div class="cart-list" id="cartList"></div>
+      <div class="cart-summary">
+        <p><span data-i18n="cart.total">Итого</span>: <strong id="cartTotal">0 ₸</strong></p>
+        <button class="btn btn--primary" type="button" data-open-order data-i18n="cart.checkout">Оформить заказ</button>
+      </div>
+    </div>
+  </aside>
+
+  <div class="modal" id="orderModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__panel">
+      <button class="modal__close" type="button" data-close-modal aria-label="Закрыть">✕</button>
+      <h3 data-i18n="form.modalTitle">Оформление заказа</h3>
+      <form class="order-form" data-order-form>
+        <input type="hidden" name="order_items" data-order-items>
+        <div class="form-grid">
+          <label>
+            <span data-i18n="form.nameLabel">Ваше имя</span>
+            <input type="text" name="name" required data-i18n-placeholder="form.namePlaceholder">
+          </label>
+          <label>
+            <span data-i18n="form.phoneLabel">Номер телефона</span>
+            <input type="tel" name="phone" required placeholder="+7 (___) ___-__-__" data-phone>
+          </label>
+          <label>
+            <span data-i18n="form.companyLabel">Компания</span>
+            <input type="text" name="company" data-i18n-placeholder="form.companyPlaceholder">
+          </label>
+          <label>
+            <span data-i18n="form.deliveryLabel">Нужна доставка</span>
+            <select name="delivery" required>
+              <option value="yes" data-i18n-option="form.deliveryYes">Да</option>
+              <option value="no" data-i18n-option="form.deliveryNo">Нет</option>
+            </select>
+          </label>
+        </div>
+        <label>
+          <span data-i18n="form.commentLabel">Комментарий</span>
+          <textarea name="comment" rows="4" data-i18n-placeholder="form.commentPlaceholder"></textarea>
+        </label>
+        <label>
+          <span data-i18n="form.cartLabel">Состав корзины</span>
+          <textarea rows="5" readonly data-cart-preview></textarea>
+        </label>
+        <div class="form-actions">
+          <button class="btn btn--accent" type="submit" data-i18n="form.sendBtn">Отправить заказ на email</button>
+          <a class="btn btn--ghost" id="modalWhatsapp" href="#" target="_blank" rel="noopener" data-i18n="form.whatsappBtn">Заказать через WhatsApp</a>
+        </div>
+        <p class="form-message" data-form-message aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="events.js"></script>
+  <script src="partners.js"></script>
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
