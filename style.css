@@ -161,8 +161,8 @@ a {
 }
 
 .brand__logo {
-  width: 54px;
-  height: 54px;
+  width: 84px;
+  height: 84px;
   object-fit: contain;
 }
 
@@ -881,6 +881,11 @@ textarea[readonly] {
 }
 
 @media (max-width: 899px) {
+  .brand__logo {
+    width: 68px;
+    height: 68px;
+  }
+
   .nav,
   .header__actions {
     display: none;

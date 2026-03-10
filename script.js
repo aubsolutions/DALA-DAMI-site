@@ -2,7 +2,7 @@
   Укажите номер WhatsApp в международном формате без "+" и пробелов.
   Пример для Казахстана: 77001234567
 */
-const WHATSAPP_NUMBER = "77012503020";
+const WHATSAPP_NUMBER = "77770664866";
 
 const CURRENCY = "₸";
 const CART_STORAGE_KEY = "dalaDamiCart";
