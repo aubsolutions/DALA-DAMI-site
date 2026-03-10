@@ -41,8 +41,8 @@ const PRODUCTS = [
       zh: "50 克"
     },
     price: null,
-    image: "assets/talkan-classic.jpg",
-    fallbackImage: "assets/product-4.svg"
+    image: "assets/talkan_classic.jpg",
+    fallbackImage: "assets/talkan_classic.jpg"
   },
   {
     id: "talkan-hazelnut-50",
@@ -77,8 +77,8 @@ const PRODUCTS = [
       zh: "50 克"
     },
     price: null,
-    image: "assets/talkan-hazelnut.jpg",
-    fallbackImage: "assets/product-5.svg"
+    image: "assets/talkan_funduk.jpg",
+    fallbackImage: "assets/talkan_funduk.jpg"
   },
   {
     id: "talkan-almond-50",
@@ -113,8 +113,8 @@ const PRODUCTS = [
       zh: "50 克"
     },
     price: null,
-    image: "assets/talkan-almond.jpg",
-    fallbackImage: "assets/product-6.svg"
+    image: "assets/talkan_mindal.jpg",
+    fallbackImage: "assets/talkan_mindal.jpg"
   },
   {
     id: "granola-nuts-300",
@@ -149,8 +149,8 @@ const PRODUCTS = [
       zh: "300 克"
     },
     price: null,
-    image: "assets/granola-nuts.jpg",
-    fallbackImage: "assets/product-1.svg"
+    image: "assets/granola_orehi.jpg",
+    fallbackImage: "assets/granola_orehi.jpg"
   },
   {
     id: "granola-superfood-300",
@@ -185,8 +185,8 @@ const PRODUCTS = [
       zh: "300 克"
     },
     price: null,
-    image: "assets/granola-superfood.jpg",
-    fallbackImage: "assets/product-2.svg"
+    image: "assets/granola_superfood.jpg",
+    fallbackImage: "assets/granola_superfood.jpg"
   },
   {
     id: "granola-chocolate-300",
@@ -221,7 +221,7 @@ const PRODUCTS = [
       zh: "300 克"
     },
     price: null,
-    image: "assets/granola-chocolate.jpg",
-    fallbackImage: "assets/product-3.svg"
+    image: "assets/granola_shokolad.jpg",
+    fallbackImage: "assets/granola_shokolad.jpg"
   }
 ];
