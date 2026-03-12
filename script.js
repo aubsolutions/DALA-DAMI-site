@@ -13,14 +13,14 @@ const LANG_ATTR_MAP = {
   ru: "ru",
   en: "en",
   kz: "kk",
-  zh: "zh-Hant"
+  zh: "zh-CN"
 };
 
 const LOCALE_MAP = {
   ru: "ru-RU",
   en: "en-US",
   kz: "kk-KZ",
-  zh: "zh-Hant"
+  zh: "zh-CN"
 };
 
 const TRANSLATIONS = {
@@ -97,7 +97,9 @@ const TRANSLATIONS = {
     },
     partners: {
       title: "Нам доверяют",
-      lead: "Партнеры и компании, с которыми DALA DAMI уже работает по поставкам и совместным проектам."
+      lead: "Партнеры и компании, с которыми DALA DAMI уже работает по поставкам и совместным проектам.",
+      prevAria: "Предыдущие логотипы",
+      nextAria: "Следующие логотипы"
     },
     howOrder: {
       title: "Как заказать",
@@ -136,7 +138,10 @@ const TRANSLATIONS = {
       whatsappLabel: "WhatsApp: написать в чат",
       emailLabel: "Email",
       addressLabel: "Адрес",
-      addressValue: "г. Астана, Е 429, д 14, нп 4"
+      addressValue: "г. Астана, Е 429, д 14, нп 4",
+      qrTitle: "QR для быстрых контактов",
+      qrWhatsapp: "WhatsApp QR",
+      qrWechat: "WeChat QR"
     },
     footer: {
       copyMark: "©",
@@ -231,7 +236,9 @@ const TRANSLATIONS = {
     },
     partners: {
       title: "Trusted By",
-      lead: "Partners and companies already working with DALA DAMI in supply and joint projects."
+      lead: "Partners and companies already working with DALA DAMI in supply and joint projects.",
+      prevAria: "Previous logos",
+      nextAria: "Next logos"
     },
     howOrder: {
       title: "How to Order",
@@ -270,7 +277,10 @@ const TRANSLATIONS = {
       whatsappLabel: "WhatsApp: open chat",
       emailLabel: "Email",
       addressLabel: "Address",
-      addressValue: "Astana, E 429, building 14, office 4"
+      addressValue: "Astana, E 429, building 14, office 4",
+      qrTitle: "QR Codes for Quick Contact",
+      qrWhatsapp: "WhatsApp QR",
+      qrWechat: "WeChat QR"
     },
     footer: {
       copyMark: "©",
@@ -365,7 +375,9 @@ const TRANSLATIONS = {
     },
     partners: {
       title: "Бізге сенім артады",
-      lead: "DALA DAMI брендімен жеткізу және бірлескен жобалар бойынша жұмыс істейтін серіктестер."
+      lead: "DALA DAMI брендімен жеткізу және бірлескен жобалар бойынша жұмыс істейтін серіктестер.",
+      prevAria: "Алдыңғы логотиптер",
+      nextAria: "Келесі логотиптер"
     },
     howOrder: {
       title: "Қалай тапсырыс беру",
@@ -404,7 +416,10 @@ const TRANSLATIONS = {
       whatsappLabel: "WhatsApp: чатқа жазу",
       emailLabel: "Email",
       addressLabel: "Мекенжай",
-      addressValue: "Астана қ., Е 429, 14-үй, 4 кеңсе"
+      addressValue: "Астана қ., Е 429, 14-үй, 4 кеңсе",
+      qrTitle: "Жылдам байланысқа арналған QR",
+      qrWhatsapp: "WhatsApp QR",
+      qrWechat: "WeChat QR"
     },
     footer: {
       copyMark: "©",
@@ -429,135 +444,140 @@ const TRANSLATIONS = {
   zh: {
     meta: {
       title: "DALA DAMI — 天然健康食品",
-      description: "DALA DAMI 提供天然、生態與健康取向食品。可瀏覽商品、加入購物車，並透過 Email 或 WhatsApp 下單。"
+      description: "DALA DAMI 提供天然、生态与健康取向食品。可浏览商品、加入购物车，并通过 Email 或 WhatsApp 下单。"
     },
-    lang: { aria: "語言選擇" },
+    lang: { aria: "语言选择" },
     nav: {
-      about: "關於品牌",
-      catalog: "商品目錄",
-      benefits: "品牌優勢",
-      events: "活動",
-      howOrder: "訂購方式",
-      contacts: "聯絡方式"
+      about: "关于品牌",
+      catalog: "商品目录",
+      benefits: "品牌优势",
+      events: "活动",
+      howOrder: "订购方式",
+      contacts: "联系方式"
     },
     header: {
-      cart: "購物車",
-      openCartAria: "開啟購物車",
-      openMenuAria: "開啟選單"
+      cart: "购物车",
+      openCartAria: "打开购物车",
+      openMenuAria: "打开菜单"
     },
     hero: {
-      label: "DALA DAMI 生態食品",
-      title: "高品質天然食品",
-      description: "嚴選原料、乾淨配方與細緻製程，為重視健康與品質的日常飲食而設計。",
+      label: "DALA DAMI 生态食品",
+      title: "高品质天然食品",
+      description: "严选原料、干净配方与细致工艺，为重视健康与品质的日常饮食而设计。",
       catalogBtn: "查看商品",
-      orderBtn: "立即下單",
-      stat1: "天然食材與乾淨配方",
-      stat2: "可透過網站與 WhatsApp 接單",
-      stat3Value: "生態",
-      stat3: "現代高端風格與穩定品質"
+      orderBtn: "立即下单",
+      stat1: "天然食材与干净配方",
+      stat2: "可通过网站与 WhatsApp 下单",
+      stat3Value: "生态",
+      stat3: "现代高端风格与稳定品质"
     },
     about: {
-      title: "關於品牌",
-      text: "DALA DAMI 是專注於天然、營養與穩定品質的食品品牌。我們嚴格挑選原料，確保純淨口感與高標準品質，讓每款產品都成為健康飲食的安心選擇。"
+      title: "关于品牌",
+      text: "DALA DAMI 是专注于天然、营养与稳定品质的食品品牌。我们严格挑选原料，确保纯净口感与高标准品质，让每款产品都成为健康饮食的安心选择。"
     },
     catalog: {
-      title: "商品目錄",
-      openCart: "開啟購物車",
-      detailsBtn: "查看詳情",
-      addBtn: "加入購物車",
-      addModalBtn: "加入購物車",
-      decreaseAria: "減少數量",
-      increaseAria: "增加數量",
+      title: "商品目录",
+      openCart: "打开购物车",
+      detailsBtn: "查看详情",
+      addBtn: "加入购物车",
+      addModalBtn: "加入购物车",
+      decreaseAria: "减少数量",
+      increaseAria: "增加数量",
       compositionLabel: "成分",
       volumeLabel: "重量/容量",
-      priceLabel: "價格",
-      priceOnRequest: "價格洽詢"
+      priceLabel: "价格",
+      priceOnRequest: "价格咨询"
     },
     benefits: {
-      title: "DALA DAMI 優勢",
+      title: "DALA DAMI 优势",
       item1Title: "天然配方",
-      item1Text: "減少多餘添加，保留自然營養。",
-      item2Title: "品質控管",
-      item2Text: "每一批次皆進行風味與安全檢測。",
-      item3Title: "現代服務",
-      item3Text: "下單流程清楚，回覆快速。",
-      item4Title: "高端美學",
-      item4Text: "乾淨俐落的品牌形象，值得信賴。",
-      item5Title: "家庭與商務皆適用",
-      item5Text: "適合個人購買與合作供應。",
-      item6Title: "WhatsApp 支援",
-      item6Text: "可快速確認品項、配送與訂單細節。"
+      item1Text: "减少多余添加，保留自然营养。",
+      item2Title: "品质管控",
+      item2Text: "每一批次均进行风味与安全检测。",
+      item3Title: "现代服务",
+      item3Text: "下单流程清楚，回复快速。",
+      item4Title: "高端美学",
+      item4Text: "干净利落的品牌形象，值得信赖。",
+      item5Title: "家庭与商务适用",
+      item5Text: "适合个人购买与合作供应。",
+      item6Title: "WhatsApp 支持",
+      item6Text: "可快速确认品项、配送与订单细节。"
     },
     events: {
-      title: "活動",
-      lead: "DALA DAMI 參與本地與國際展會、市集及食品產業活動。",
+      title: "活动",
+      lead: "DALA DAMI 参与本地与国际展会、市集及食品产業活動。",
       dateLabel: "日期",
-      locationLabel: "地點",
-      moreBtn: "查看詳情",
-      prevAria: "上一個活動",
-      nextAria: "下一個活動"
+      locationLabel: "地点",
+      moreBtn: "查看详情",
+      prevAria: "上一个活动",
+      nextAria: "下一个活动"
     },
     partners: {
-      title: "合作夥伴",
-      lead: "以下為已與 DALA DAMI 在供應與合作專案中建立合作的夥伴。"
+      title: "合作伙伴",
+      lead: "以下为已与 DALA DAMI 在供应与合作项目中建立合作的伙伴。",
+      prevAria: "上一个标志",
+      nextAria: "下一个标志"
     },
     howOrder: {
-      title: "訂購方式",
-      step1: "在商品目錄中選擇商品並加入購物車。",
-      step2: "開啟購物車，確認商品與數量。",
-      step3: "點擊「立即下單」並填寫簡短表單。",
-      step4: "我們將收到 Email 訂單並與您聯繫確認。"
+      title: "订购方式",
+      step1: "在商品目录中选择商品并加入购物车。",
+      step2: "打开购物车，确认商品与数量。",
+      step3: "点击“立即下单”并填写简短表单。",
+      step4: "我们将收到 Email 订单并与您联系确认。"
     },
     form: {
-      sectionTitle: "訂單表單",
-      openModalBtn: "在彈窗中開啟",
-      modalTitle: "訂單結帳",
+      sectionTitle: "订单表单",
+      openModalBtn: "在弹窗中打开",
+      modalTitle: "订单结账",
       nameLabel: "您的姓名",
       namePlaceholder: "例如：Aida",
-      phoneLabel: "電話號碼",
+      phoneLabel: "电话号码",
       companyLabel: "公司",
-      companyPlaceholder: "公司名稱（選填）",
+      companyPlaceholder: "公司名称（选填）",
       deliveryLabel: "是否需要配送",
       deliveryYes: "是",
       deliveryNo: "否",
-      commentLabel: "備註",
-      commentPlaceholder: "配送或訂單補充說明",
-      cartLabel: "購物車內容",
-      sendBtn: "透過 Email 送出訂單",
-      whatsappBtn: "透過 WhatsApp 下單",
+      commentLabel: "备注",
+      commentPlaceholder: "配送或订单补充说明",
+      cartLabel: "购物车内容",
+      sendBtn: "通过 Email 发送订单",
+      whatsappBtn: "通过 WhatsApp 下单",
       messages: {
-        emptyCart: "請先加入商品後再送出訂單。",
-        invalidPhone: "請輸入正確電話格式：+7 (___) ___-__-__。",
-        sent: "訂單已送出，我們將盡快與您聯繫。",
-        sendError: "訂單送出失敗。"
+        emptyCart: "请先加入商品后再送出订单。",
+        invalidPhone: "请输入正确电话号码格式：+7 (___) ___-__-__。",
+        sent: "订单已发送，我们将尽快与您联系。",
+        sendError: "订单发送失败。"
       }
     },
     contacts: {
-      title: "聯絡方式",
-      phoneLabel: "電話",
-      whatsappLabel: "WhatsApp：開啟對話",
+      title: "联系方式",
+      phoneLabel: "电话",
+      whatsappLabel: "WhatsApp：打开对话",
       emailLabel: "Email",
       addressLabel: "地址",
-      addressValue: "阿斯塔納市 E 429，14 號，4 室"
+      addressValue: "阿斯塔纳市 E 429，14 号，4 室",
+      qrTitle: "快速联系二维码",
+      qrWhatsapp: "WhatsApp 二维码",
+      qrWechat: "WeChat 二维码"
     },
     footer: {
       copyMark: "©",
       copyText: "DALA DAMI。天然健康食品。",
-      toTop: "回到頂部"
+      toTop: "回到顶部"
     },
     cart: {
-      title: "您的購物車",
-      total: "總計",
-      checkout: "立即下單",
-      empty: "購物車目前為空，請先從目錄加入商品。",
-      remove: "刪除",
+      title: "您的购物车",
+      total: "总计",
+      checkout: "立即下单",
+      empty: "购物车目前为空，请先从目录加入商品。",
+      remove: "删除",
       perItem: "件",
-      clarified: "待確認",
-      plusOnRequest: "+ 價格洽詢商品",
-      emptySummary: "購物車為空"
+      clarified: "待确认",
+      plusOnRequest: "+ 价格咨询商品",
+      emptySummary: "购物车为空"
     },
     whatsapp: {
-      intro: "您好！我想訂購 DALA DAMI 產品。"
+      intro: "您好！我想订购 DALA DAMI 产品。"
     }
   }
 };
@@ -629,6 +649,15 @@ function bindGlobalEvents() {
       const direction = button.dataset.eventNav === "next" ? 1 : -1;
       const step = Math.max(280, Math.floor(eventsTrack.clientWidth * 0.86));
       eventsTrack.scrollBy({ left: step * direction, behavior: "smooth" });
+    });
+  });
+
+  document.querySelectorAll("[data-partner-nav]").forEach((button) => {
+    button.addEventListener("click", () => {
+      if (!partnersGrid) return;
+      const direction = button.dataset.partnerNav === "next" ? 1 : -1;
+      const step = Math.max(260, Math.floor(partnersGrid.clientWidth * 0.9));
+      partnersGrid.scrollBy({ left: step * direction, behavior: "smooth" });
     });
   });
 
@@ -901,7 +930,7 @@ function renderPartners() {
 
     const card = `
       <article class="partner-card">
-        <img src="${logo}" alt="${escapeHTML(partnerName)}" loading="lazy">
+        <img src="${logo}" alt="${escapeHTML(partnerName)}" loading="lazy" onerror="this.onerror=null;this.src='assets/partner-1.svg';">
       </article>
     `;
 
@@ -921,6 +950,12 @@ function openEventModal(eventItem) {
   const title = getLocalized(eventItem.title);
   const location = getLocalized(eventItem.location);
   const fullDescription = getLocalized(eventItem.fullDescription || eventItem.description);
+  const descriptionParagraphs = fullDescription
+    .split(/\n{2,}/)
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean)
+    .map((paragraph) => `<p>${escapeHTML(paragraph)}</p>`)
+    .join("");
   const fallbackImage = eventItem.fallbackImage || "assets/product-1.svg";
 
   eventModalBody.innerHTML = `
@@ -929,7 +964,7 @@ function openEventModal(eventItem) {
       <p class="event-card__meta">${t.events.dateLabel}: ${formatEventDate(eventItem.date)}</p>
       <p class="event-card__meta">${t.events.locationLabel}: ${escapeHTML(location)}</p>
       <img src="${eventItem.image}" alt="${escapeHTML(title)}" onerror="this.onerror=null;this.src='${fallbackImage}';">
-      <p>${escapeHTML(fullDescription)}</p>
+      <div class="event-modal__text">${descriptionParagraphs}</div>
     </article>
   `;
 

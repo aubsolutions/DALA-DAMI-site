@@ -8,7 +8,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -43,7 +43,7 @@
         <button type="button" data-lang-btn="ru">RU</button>
         <button type="button" data-lang-btn="en">EN</button>
         <button type="button" data-lang-btn="kz">KZ</button>
-        <button type="button" data-lang-btn="zh">繁</button>
+        <button type="button" data-lang-btn="zh">简</button>
       </div>
 
       <button class="menu-toggle" type="button" id="menuToggle" data-i18n-aria="header.openMenuAria" aria-label="Открыть меню">☰</button>
@@ -160,11 +160,17 @@
       <div class="container">
         <div class="section-head">
           <h2 data-i18n="partners.title">Нам доверяют</h2>
+          <div class="partners-controls">
+            <button class="btn btn--ghost partners-nav" type="button" data-partner-nav="prev" data-i18n-aria="partners.prevAria" aria-label="Предыдущие логотипы">←</button>
+            <button class="btn btn--ghost partners-nav" type="button" data-partner-nav="next" data-i18n-aria="partners.nextAria" aria-label="Следующие логотипы">→</button>
+          </div>
         </div>
         <p class="partners-lead" data-i18n="partners.lead">
           Партнеры и компании, с которыми DALA DAMI уже работает по поставкам и совместным проектам.
         </p>
-        <div class="partners-grid" id="partnersGrid"></div>
+        <div class="partners-carousel">
+          <div class="partners-track" id="partnersGrid"></div>
+        </div>
       </div>
     </section>
 
@@ -229,11 +235,26 @@
     <section class="section" id="contact">
       <div class="container contacts">
         <h2 data-i18n="contacts.title">Контакты</h2>
-        <div class="contacts-grid">
-          <a href="tel:+77770664866"><span data-i18n="contacts.phoneLabel">Телефон</span>: +7 (777) 066-48-66</a>
-          <a id="contactWhatsapp" href="#" target="_blank" rel="noopener" data-i18n="contacts.whatsappLabel">WhatsApp: написать в чат</a>
-          <a href="mailto:dala.dami.2023@gmail.com"><span data-i18n="contacts.emailLabel">Email</span>: dala.dami.2023@gmail.com</a>
-          <p><span data-i18n="contacts.addressLabel">Адрес</span>: <span data-i18n="contacts.addressValue">г. Астана, Е 429, д 14, нп 4</span></p>
+        <div class="contacts-layout">
+          <div class="contacts-grid">
+            <a href="tel:+77770664866"><span data-i18n="contacts.phoneLabel">Телефон</span>: +7 (777) 066-48-66</a>
+            <a id="contactWhatsapp" href="#" target="_blank" rel="noopener" data-i18n="contacts.whatsappLabel">WhatsApp: написать в чат</a>
+            <a href="mailto:dala.dami.2023@gmail.com"><span data-i18n="contacts.emailLabel">Email</span>: dala.dami.2023@gmail.com</a>
+            <p><span data-i18n="contacts.addressLabel">Адрес</span>: <span data-i18n="contacts.addressValue">г. Астана, Е 429, д 14, нп 4</span></p>
+          </div>
+          <div class="contacts-qr">
+            <h3 data-i18n="contacts.qrTitle">QR для быстрых контактов</h3>
+            <div class="contacts-qr__grid">
+              <figure class="qr-card">
+                <img src="assets/qrwhatsup.png" alt="WhatsApp QR" loading="lazy">
+                <figcaption data-i18n="contacts.qrWhatsapp">WhatsApp QR</figcaption>
+              </figure>
+              <figure class="qr-card">
+                <img src="assets/qrwechat.png" alt="WeChat QR" loading="lazy">
+                <figcaption data-i18n="contacts.qrWechat">WeChat QR</figcaption>
+              </figure>
+            </div>
+          </div>
         </div>
       </div>
     </section>

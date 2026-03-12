@@ -94,7 +94,7 @@ const WHATSAPP_NUMBER = "77001234567";
 
 Все товары лежат в `products.js` в массиве `PRODUCTS`.
 
-Сайт мультиязычный: `RU / EN / KZ / 繁體中文`.
+Сайт мультиязычный: `RU / EN / KZ / 简体中文`.
 
 Пример структуры одного товара (мультиязычно):
 
@@ -105,13 +105,13 @@ const WHATSAPP_NUMBER = "77001234567";
     ru: "Талкан Классический",
     en: "Talkan Classic",
     kz: "Классикалық талқан",
-    zh: "經典塔爾坎"
+    zh: "经典塔尔坎"
   },
   shortDescription: {
     ru: "Короткое описание",
     en: "Short description",
     kz: "Қысқаша сипаттама",
-    zh: "簡短描述"
+    zh: "简短描述"
   },
   composition: {
     ru: "Состав",

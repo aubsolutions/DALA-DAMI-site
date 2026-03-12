@@ -4,69 +4,80 @@
 */
 const PARTNERS = [
   {
-    id: "partner-1",
+    id: "apero",
     name: {
-      ru: "EcoMart",
-      en: "EcoMart",
-      kz: "EcoMart",
-      zh: "EcoMart"
+      ru: "Apero",
+      en: "Apero",
+      kz: "Apero",
+      zh: "Apero"
     },
-    logo: "assets/partner-1.svg",
+    logo: "assets/partners/apero.png",
     website: ""
   },
   {
-    id: "partner-2",
+    id: "fermag",
     name: {
-      ru: "Green Basket",
-      en: "Green Basket",
-      kz: "Green Basket",
-      zh: "Green Basket"
+      ru: "Fermag",
+      en: "Fermag",
+      kz: "Fermag",
+      zh: "Fermag"
     },
-    logo: "assets/partner-2.svg",
+    logo: "assets/partners/fermag.webp",
     website: ""
   },
   {
-    id: "partner-3",
+    id: "flip",
     name: {
-      ru: "Bio Market",
-      en: "Bio Market",
-      kz: "Bio Market",
-      zh: "Bio Market"
+      ru: "Flip",
+      en: "Flip",
+      kz: "Flip",
+      zh: "Flip"
     },
-    logo: "assets/partner-3.svg",
+    logo: "assets/partners/flip.png",
     website: ""
   },
   {
-    id: "partner-4",
+    id: "flyarystan",
     name: {
-      ru: "Healthy Choice",
-      en: "Healthy Choice",
-      kz: "Healthy Choice",
-      zh: "Healthy Choice"
+      ru: "FlyArystan",
+      en: "FlyArystan",
+      kz: "FlyArystan",
+      zh: "FlyArystan"
     },
-    logo: "assets/partner-4.svg",
+    logo: "assets/partners/flyarystan.png",
     website: ""
   },
   {
-    id: "partner-5",
+    id: "galmart",
     name: {
-      ru: "Fresh Hub",
-      en: "Fresh Hub",
-      kz: "Fresh Hub",
-      zh: "Fresh Hub"
+      ru: "Galmart",
+      en: "Galmart",
+      kz: "Galmart",
+      zh: "Galmart"
     },
-    logo: "assets/partner-5.svg",
+    logo: "assets/partners/galmart.svg",
     website: ""
   },
   {
-    id: "partner-6",
+    id: "im",
     name: {
-      ru: "Natural Store",
-      en: "Natural Store",
-      kz: "Natural Store",
-      zh: "Natural Store"
+      ru: "IM",
+      en: "IM",
+      kz: "IM",
+      zh: "IM"
     },
-    logo: "assets/partner-6.svg",
+    logo: "assets/partners/im.png",
+    website: ""
+  },
+  {
+    id: "vkusmart",
+    name: {
+      ru: "Vkusmart",
+      en: "Vkusmart",
+      kz: "Vkusmart",
+      zh: "Vkusmart"
+    },
+    logo: "assets/partners/vkusmart.png",
     website: ""
   }
 ];
