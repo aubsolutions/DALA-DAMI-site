@@ -56,7 +56,7 @@ const TRANSLATIONS = {
     },
     about: {
       title: "О компании",
-      text: "DALA DAMI — это бренд продуктов питания с фокусом на натуральность, пользу и стабильное качество. Мы отбираем сырье, которое соответствует высоким стандартам чистоты и вкуса, чтобы каждый продукт становился частью здорового рациона и уверенного выбора на каждый день."
+      text: "DALA DAMI — компания, специализирующаяся на производстве натуральных продуктов питания из пшена. Мы делаем ставку на экологически чистое производство, высокое качество сырья и бережный подход к сохранению природной пользы каждого продукта.\n\nНаше главное направление — создание полезных продуктов для людей, которые выбирают здоровый образ жизни, натуральный состав и осознанное питание. В нашей продукции нет лишнего — только отборные ингредиенты, естественный вкус и польза для всей семьи. Мы уделяем особое внимание продуктам без сахара, ориентируясь на современные требования к здоровому и сбалансированному рациону.\n\nПри этом DALA DAMI сохраняет связь с традициями, развивая направление национальных продуктов питания. Мы объединяем натуральность, современные стандарты качества и уважение к культуре, чтобы предлагать покупателям полезную, вкусную и достойную продукцию на каждый день."
     },
     catalog: {
       title: "Каталог товаров",
@@ -195,7 +195,7 @@ const TRANSLATIONS = {
     },
     about: {
       title: "About the Company",
-      text: "DALA DAMI is a food brand focused on natural ingredients, health benefits, and stable quality. We select raw materials that meet strict standards of purity and taste so every product becomes part of a healthy and confident daily choice."
+      text: "DALA DAMI is a company specializing in the production of natural millet-based food products. We focus on environmentally responsible production, high-quality raw materials, and a careful approach to preserving the natural benefits of every product.\n\nOur main direction is creating wholesome products for people who choose a healthy lifestyle, natural ingredients, and conscious nutrition. There is nothing unnecessary in our products, only selected ingredients, natural taste, and benefits for the whole family. We pay special attention to sugar-free products, responding to modern expectations for a healthy and balanced diet.\n\nAt the same time, DALA DAMI stays connected to tradition by developing national food products. We combine natural purity, modern quality standards, and respect for culture to offer customers healthy, tasty, and worthy products for everyday life."
     },
     catalog: {
       title: "Product Catalog",
@@ -334,7 +334,7 @@ const TRANSLATIONS = {
     },
     about: {
       title: "Компания туралы",
-      text: "DALA DAMI — табиғилыққа, пайдаға және тұрақты сапаға бағытталған азық-түлік бренді. Біз тазалық пен дәмнің жоғары стандарттарына сай шикізатты таңдап, әр өнімді күнделікті пайдалы таңдауға айналдырамыз."
+      text: "DALA DAMI — тарыдан жасалатын табиғи азық-түлік өнімдерін өндіруге маманданған компания. Біз экологиялық таза өндіріске, жоғары сапалы шикізатқа және әр өнімнің табиғи пайдасын сақтауға ұқыпты көзқарасқа басымдық береміз.\n\nБіздің негізгі бағытымыз — салауатты өмір салтын, табиғи құрамды және саналы тамақтануды таңдайтын адамдарға арналған пайдалы өнімдер жасау. Біздің өнімдерде артық ештеңе жоқ: тек мұқият іріктелген ингредиенттер, табиғи дәм және бүкіл отбасыға арналған пайда. Біз қантсыз өнімдерге ерекше көңіл бөліп, дұрыс әрі теңгерімді тамақтанудың заманауи талаптарына сүйенеміз.\n\nСонымен қатар, DALA DAMI ұлттық тағам өнімдері бағытын дамыта отырып, дәстүрмен байланысын сақтайды. Біз табиғилықты, заманауи сапа стандарттарын және мәдениетке деген құрметті біріктіріп, тұтынушыларға күн сайын пайдалы, дәмді және лайықты өнім ұсынуға тырысамыз."
     },
     catalog: {
       title: "Өнімдер каталогы",
@@ -473,7 +473,7 @@ const TRANSLATIONS = {
     },
     about: {
       title: "关于品牌",
-      text: "DALA DAMI 是专注于天然、营养与稳定品质的食品品牌。我们严格挑选原料，确保纯净口感与高标准品质，让每款产品都成为健康饮食的安心选择。"
+      text: "DALA DAMI 是一家专注于生产天然小米食品的公司。我们坚持环保洁净的生产方式、优质原料，并以细致严谨的态度保留每一款产品的天然营养价值。\n\n我们的核心方向，是为选择健康生活方式、天然配方与理性饮食的人们打造有益健康的食品。我们的产品没有多余成分，只有甄选原料、自然风味，以及适合全家人的营养价值。我们也特别重视无糖产品，以回应当代消费者对健康均衡饮食的需求。\n\n与此同时，DALA DAMI 也持续传承传统，发展民族特色食品方向。我们将天然、本真的理念，现代质量标准，以及对文化的尊重结合起来，为消费者提供适合每日享用的健康、美味且值得信赖的产品。"
     },
     catalog: {
       title: "商品目录",
