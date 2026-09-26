@@ -26,8 +26,8 @@ const LOCALE_MAP = {
 const TRANSLATIONS = {
   ru: {
     meta: {
-      title: "DALA DAMI — Натуральные продукты",
-      description: "DALA DAMI — натуральные продукты питания в стиле ЭКО и ЗОЖ. Каталог, корзина, заказ через email и WhatsApp."
+      title: "DALA DAMI — натуральные продукты из пшена в Казахстане",
+      description: "DALA DAMI — производитель натуральных продуктов из пшена в Казахстане: талкан, гранола, продукты без сахара и национальные продукты питания."
     },
     lang: { aria: "Выбор языка" },
     nav: {
@@ -165,8 +165,8 @@ const TRANSLATIONS = {
   },
   en: {
     meta: {
-      title: "DALA DAMI — Natural Food Products",
-      description: "DALA DAMI natural eco and healthy food products. Browse catalog, add to cart, and order by email or WhatsApp."
+      title: "DALA DAMI — Natural Millet Foods from Kazakhstan",
+      description: "DALA DAMI produces natural millet foods in Kazakhstan, including talkan, granola, sugar-free products, and traditional foods."
     },
     lang: { aria: "Language selection" },
     nav: {
@@ -304,8 +304,8 @@ const TRANSLATIONS = {
   },
   kz: {
     meta: {
-      title: "DALA DAMI — Табиғи азық-түлік",
-      description: "DALA DAMI эко және дұрыс тамақтануға арналған табиғи өнімдері. Каталог, себет, email және WhatsApp арқылы тапсырыс."
+      title: "DALA DAMI — Қазақстандағы табиғи тары өнімдері",
+      description: "DALA DAMI — Қазақстандағы табиғи тары өнімдерін өндіруші: талқан, гранола, қантсыз және ұлттық тағам өнімдері."
     },
     lang: { aria: "Тілді таңдау" },
     nav: {
@@ -443,8 +443,8 @@ const TRANSLATIONS = {
   },
   zh: {
     meta: {
-      title: "DALA DAMI — 天然健康食品",
-      description: "DALA DAMI 提供天然、生态与健康取向食品。可浏览商品、加入购物车，并通过 Email 或 WhatsApp 下单。"
+      title: "DALA DAMI — 哈萨克斯坦天然小米食品",
+      description: "DALA DAMI 生产哈萨克斯坦天然小米食品，包括塔尔坎、格兰诺拉麦片、无糖产品和传统食品。"
     },
     lang: { aria: "语言选择" },
     nav: {
