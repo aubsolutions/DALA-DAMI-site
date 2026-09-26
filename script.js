@@ -832,6 +832,7 @@ function renderCatalog() {
     const volume = getLocalized(product.volume);
     const price = product.price ? formatPrice(product.price) : t.catalog.priceOnRequest;
     const fallbackImage = product.fallbackImage || "assets/product-1.svg";
+    const detailsUrl = product.seoPath || "#catalog";
 
     return `
       <article class="product-card">
@@ -842,7 +843,7 @@ function renderCatalog() {
           <p class="product-card__meta">${escapeHTML(volume)}</p>
           <p class="product-card__price">${price}</p>
           <div class="product-card__actions">
-            <button class="btn btn--accent product-card__main-btn" type="button" data-details="${product.id}">${t.catalog.detailsBtn}</button>
+            <a class="btn btn--accent product-card__main-btn" href="${detailsUrl}">${t.catalog.detailsBtn}</a>
             <div class="card-cart-row">
               <div class="card-qty">
                 <button type="button" aria-label="${t.catalog.decreaseAria}" data-card-change="${product.id}" data-delta="-1">−</button>
