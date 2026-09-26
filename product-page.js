@@ -15,12 +15,31 @@
   const details = document.querySelector(".product-page__details");
 
   if (headerInner) {
+    const nav = headerInner.querySelector(".nav");
+    if (nav) {
+      nav.innerHTML = `
+        <a href="../../#about">О компании</a>
+        <a href="../../#catalog">Каталог</a>
+        <a href="../../#benefits">Преимущества</a>
+        <a href="../../#events">Мероприятия</a>
+        <a href="../../#how-order">Как заказать</a>
+        <a href="../../#contact">Контакты</a>
+      `;
+    }
     headerInner.insertAdjacentHTML("beforeend", `
-      <div class="product-header-actions">
-        <button class="page-cart-button" type="button" data-page-cart-toggle>
-          Корзина <span data-cart-count>0</span>
+      <div class="header__actions">
+        <a class="btn btn--ghost" href="https://wa.me/${WHATSAPP_NUMBER}" target="_blank" rel="noopener">WhatsApp</a>
+        <button class="btn btn--accent cart-toggle" type="button" data-page-cart-toggle aria-label="Открыть корзину">
+          <span>Корзина</span> <span class="cart-badge" data-cart-count>0</span>
         </button>
       </div>
+      <div class="lang-switch" aria-label="Выбор языка" role="group">
+        <button class="is-active" type="button" data-product-lang="ru">RU</button>
+        <button type="button" data-product-lang="en">EN</button>
+        <button type="button" data-product-lang="kz">KZ</button>
+        <button type="button" data-product-lang="zh">简</button>
+      </div>
+      <button class="menu-toggle" type="button" data-product-menu aria-label="Открыть меню">☰</button>
     `);
   }
 
@@ -56,6 +75,12 @@
           `).join("")}
         </div>
       </section>
+    `);
+  }
+
+  if (!document.querySelector(".footer")) {
+    document.querySelector(".product-page")?.insertAdjacentHTML("afterend", `
+      <footer class="footer"><div class="container footer__inner"><p>© ${new Date().getFullYear()} DALA DAMI. Натуральные продукты питания.</p><a href="../../">На главную</a></div></footer>
     `);
   }
 
@@ -101,6 +126,11 @@
     if (target.matches("[data-page-cart-close]")) closeCart();
     if (target.matches("[data-page-checkout]")) openOrder();
     if (target.matches("[data-page-order-close]")) closeOrder();
+    if (target.matches("[data-product-menu]")) document.querySelector(".header")?.classList.toggle("is-open");
+    if (target.matches("[data-product-lang]")) {
+      localStorage.setItem("dalaDamiLang", target.dataset.productLang);
+      window.location.href = "../../";
+    }
     if (target.matches("[data-page-cart-change]")) { change(target.dataset.pageCartChange, Number(target.dataset.delta)); }
     if (target.matches("[data-page-cart-remove]")) { remove(target.dataset.pageCartRemove); }
   });
