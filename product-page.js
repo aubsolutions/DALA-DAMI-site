@@ -1,16 +1,15 @@
 (() => {
   const CART_KEY = "dalaDamiCart";
   const WHATSAPP_NUMBER = "77770664866";
+  const catalogProducts = typeof PRODUCTS !== "undefined" && Array.isArray(PRODUCTS) ? PRODUCTS : [];
   const canonicalUrl = document.querySelector('link[rel="canonical"]')?.href || "";
   const productId = document.body.dataset.productId;
-  const product = Array.isArray(window.PRODUCTS)
-    ? window.PRODUCTS.find((item) => item.id === productId || canonicalUrl.endsWith(item.seoPath))
-    : null;
+  const product = catalogProducts.find((item) => item.id === productId || canonicalUrl.endsWith(item.seoPath));
   if (!product) return;
 
   let quantity = 1;
   let cart = loadCart();
-  const productMap = new Map(window.PRODUCTS.map((item) => [item.id, item]));
+  const productMap = new Map(catalogProducts.map((item) => [item.id, item]));
   const actions = document.querySelector(".product-page__actions");
   const headerInner = document.querySelector(".header__inner");
   const details = document.querySelector(".product-page__details");
@@ -43,7 +42,7 @@
   }
 
   if (details) {
-    const recommendations = window.PRODUCTS.filter((item) => item.id !== product.id).slice(0, 3);
+    const recommendations = catalogProducts.filter((item) => item.id !== product.id).slice(0, 3);
     details.insertAdjacentHTML("afterend", `
       <section class="product-recommendations" aria-labelledby="other-products-title">
         <div class="product-recommendations__head"><p class="product-page__eyebrow">Каталог DALA DAMI</p><h2 id="other-products-title">Попробуйте также</h2></div>
