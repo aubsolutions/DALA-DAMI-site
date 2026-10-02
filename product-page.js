@@ -133,6 +133,7 @@
     }
     if (target.matches("[data-page-cart-change]")) { change(target.dataset.pageCartChange, Number(target.dataset.delta)); }
     if (target.matches("[data-page-cart-remove]")) { remove(target.dataset.pageCartRemove); }
+    if (target.matches("[data-page-whatsapp]")) track("whatsapp_click", { link_location: "product_order" });
   });
 
   document.querySelector("[data-page-order-form]").addEventListener("submit", async (event) => {
@@ -148,13 +149,20 @@
       const payload = await response.json();
       if (!response.ok || !payload.success) throw new Error(payload.message || "Не удалось отправить заказ.");
       message.textContent = "Заказ отправлен. Мы скоро с вами свяжемся."; message.className = "page-order__message is-success";
+      track("generate_lead", { lead_source: "product_order_form" });
     } catch (error) {
       message.textContent = error.message || "Не удалось отправить заказ. Попробуйте WhatsApp."; message.className = "page-order__message is-error";
     }
   });
 
   function entries() { return Object.entries(cart).map(([id, count]) => ({ product: productMap.get(id), count })).filter((item) => item.product && item.count > 0); }
-  function add(id, count) { cart[id] = (cart[id] || 0) + count; save(); update(); }
+  function add(id, count) {
+    const item = productMap.get(id);
+    cart[id] = (cart[id] || 0) + count;
+    save();
+    update();
+    if (item) track("add_to_cart", { items: [{ item_id: item.id, item_name: item.name.ru, quantity: count }] });
+  }
   function change(id, delta) { const next = (cart[id] || 0) + delta; if (next > 0) cart[id] = next; else delete cart[id]; save(); update(); }
   function remove(id) { delete cart[id]; save(); update(); }
   function loadCart() { try { return JSON.parse(localStorage.getItem(CART_KEY)) || {}; } catch { return {}; } }
@@ -176,8 +184,15 @@
   }
   function openCart() { document.querySelector("[data-page-cart]").classList.add("is-open"); document.querySelector("[data-page-cart]").setAttribute("aria-hidden", "false"); }
   function closeCart() { document.querySelector("[data-page-cart]").classList.remove("is-open"); document.querySelector("[data-page-cart]").setAttribute("aria-hidden", "true"); }
-  function openOrder() { closeCart(); update(); document.querySelector("[data-page-order]").classList.add("is-open"); document.querySelector("[data-page-order]").setAttribute("aria-hidden", "false"); }
+  function openOrder() {
+    closeCart();
+    update();
+    document.querySelector("[data-page-order]").classList.add("is-open");
+    document.querySelector("[data-page-order]").setAttribute("aria-hidden", "false");
+    track("begin_checkout", { items: entries().map(({ product: item, count }) => ({ item_id: item.id, item_name: item.name.ru, quantity: count })) });
+  }
   function closeOrder() { document.querySelector("[data-page-order]").classList.remove("is-open"); document.querySelector("[data-page-order]").setAttribute("aria-hidden", "true"); }
+  function track(eventName, parameters) { if (typeof window.gtag === "function") window.gtag("event", eventName, parameters); }
   function escapeHTML(value) { return String(value).replace(/[&<>'"]/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" }[char])); }
   renderQuantity(); update();
 })();

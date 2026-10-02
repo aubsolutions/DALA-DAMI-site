@@ -26,8 +26,8 @@ const LOCALE_MAP = {
 const TRANSLATIONS = {
   ru: {
     meta: {
-      title: "DALA DAMI — натуральные продукты из пшена в Казахстане",
-      description: "DALA DAMI — производитель натуральных продуктов из пшена в Казахстане: талкан, гранола, продукты без сахара и национальные продукты питания."
+      title: "Талкан, гранола и натуральные продукты — DALA DAMI",
+      description: "Талкан из пшена и гранола DALA DAMI из Казахстана: натуральные продукты для полезного завтрака и лёгкого перекуса. Заказ через сайт и WhatsApp."
     },
     lang: { aria: "Выбор языка" },
     nav: {
@@ -45,7 +45,7 @@ const TRANSLATIONS = {
     },
     hero: {
       label: "ЭКО ПРОДУКТЫ DALA DAMI",
-      title: "Натуральные продукты премиального качества",
+      title: "Талкан, гранола и натуральные продукты",
       description: "Чистые составы, отборное сырье и аккуратное производство для осознанного питания и ежедневного доверия к вашему выбору.",
       catalogBtn: "Перейти в каталог",
       orderBtn: "Оформить заказ",
@@ -57,6 +57,29 @@ const TRANSLATIONS = {
     about: {
       title: "О компании",
       text: "DALA DAMI — компания, специализирующаяся на производстве натуральных продуктов питания из пшена. Мы делаем ставку на экологически чистое производство, высокое качество сырья и бережный подход к сохранению природной пользы каждого продукта.\n\nНаше главное направление — создание полезных продуктов для людей, которые выбирают здоровый образ жизни, натуральный состав и осознанное питание. В нашей продукции нет лишнего — только отборные ингредиенты, естественный вкус и польза для всей семьи. Мы уделяем особое внимание продуктам без сахара, ориентируясь на современные требования к здоровому и сбалансированному рациону.\n\nПри этом DALA DAMI сохраняет связь с традициями, развивая направление национальных продуктов питания. Мы объединяем натуральность, современные стандарты качества и уважение к культуре, чтобы предлагать покупателям полезную, вкусную и достойную продукцию на каждый день."
+    },
+    productGuide: {
+      eyebrow: "НАТУРАЛЬНЫЕ ПРОДУКТЫ DALA DAMI",
+      title: "Талкан и гранола: полезный завтрак и лёгкий перекус",
+      lead: "Два направления с разным вкусом и форматом: традиционный талкан из пшена и хрустящая гранола для тех, кто выбирает полезный завтрак и удобный лёгкий перекус.",
+      talkanAlt: "Талкан из пшена DALA DAMI",
+      talkanLabel: "ТРАДИЦИОННЫЙ ПРОДУКТ ИЗ ПШЕНА",
+      talkanTitle: "Талкан из пшена",
+      talkanText: "Обжаренное и мелко измельченное зерно для завтрака, перекуса, каш и напитков.",
+      talkanVariants: "Три вкуса:",
+      classicLink: "Классический",
+      almondLink: "С миндалем",
+      hazelnutLink: "С лесным орехом",
+      granolaAlt: "Гранола DALA DAMI",
+      granolaLabel: "ХРУСТЯЩИЙ ЗАВТРАК И ПЕРЕКУС",
+      granolaTitle: "Гранола DALA DAMI",
+      granolaText: "Запеченные овсяные хлопья, пшено, орехи и семена — готовый вариант для полезного завтрака или лёгкого перекуса.",
+      granolaVariants: "Три вида:",
+      nutsLink: "С орехами",
+      superfoodLink: "Суперфуд",
+      chocolateLink: "Шоколадная",
+      catalogBtn: "Смотреть весь каталог",
+      orderBtn: "Как заказать"
     },
     catalog: {
       title: "Каталог товаров",
@@ -165,8 +188,8 @@ const TRANSLATIONS = {
   },
   en: {
     meta: {
-      title: "DALA DAMI — Natural Millet Foods from Kazakhstan",
-      description: "DALA DAMI produces natural millet foods in Kazakhstan, including talkan, granola, sugar-free products, and traditional foods."
+      title: "Talkan, Granola and Natural Foods — DALA DAMI",
+      description: "DALA DAMI millet talkan and granola from Kazakhstan for a wholesome breakfast or a light snack. Order online or via WhatsApp."
     },
     lang: { aria: "Language selection" },
     nav: {
@@ -184,7 +207,7 @@ const TRANSLATIONS = {
     },
     hero: {
       label: "DALA DAMI ECO PRODUCTS",
-      title: "Premium Natural Food Products",
+      title: "Talkan, Granola and Natural Foods",
       description: "Clean ingredients, carefully selected raw materials, and thoughtful production for conscious nutrition and everyday trust.",
       catalogBtn: "Go to catalog",
       orderBtn: "Place order",
@@ -196,6 +219,29 @@ const TRANSLATIONS = {
     about: {
       title: "About the Company",
       text: "DALA DAMI is a company specializing in the production of natural millet-based food products. We focus on environmentally responsible production, high-quality raw materials, and a careful approach to preserving the natural benefits of every product.\n\nOur main direction is creating wholesome products for people who choose a healthy lifestyle, natural ingredients, and conscious nutrition. There is nothing unnecessary in our products, only selected ingredients, natural taste, and benefits for the whole family. We pay special attention to sugar-free products, responding to modern expectations for a healthy and balanced diet.\n\nAt the same time, DALA DAMI stays connected to tradition by developing national food products. We combine natural purity, modern quality standards, and respect for culture to offer customers healthy, tasty, and worthy products for everyday life."
+    },
+    productGuide: {
+      eyebrow: "NATURAL DALA DAMI FOODS",
+      title: "Talkan and granola for breakfast and snacks",
+      lead: "Two distinctive choices: traditional millet talkan and crunchy granola made with natural ingredients.",
+      talkanAlt: "DALA DAMI millet talkan",
+      talkanLabel: "A TRADITIONAL MILLET FOOD",
+      talkanTitle: "Millet talkan",
+      talkanText: "Roasted and finely ground grain for breakfast, snacks, porridge, and drinks.",
+      talkanVariants: "Three flavors:",
+      classicLink: "Classic",
+      almondLink: "Almond",
+      hazelnutLink: "Hazelnut",
+      granolaAlt: "DALA DAMI granola",
+      granolaLabel: "A CRUNCHY BREAKFAST AND SNACK",
+      granolaTitle: "DALA DAMI granola",
+      granolaText: "Baked oats, millet, nuts, and seeds to enjoy on their own or with yogurt and milk.",
+      granolaVariants: "Three varieties:",
+      nutsLink: "Nut",
+      superfoodLink: "Superfood",
+      chocolateLink: "Chocolate",
+      catalogBtn: "View full catalog",
+      orderBtn: "How to order"
     },
     catalog: {
       title: "Product Catalog",
@@ -304,8 +350,8 @@ const TRANSLATIONS = {
   },
   kz: {
     meta: {
-      title: "DALA DAMI — Қазақстандағы табиғи тары өнімдері",
-      description: "DALA DAMI — Қазақстандағы табиғи тары өнімдерін өндіруші: талқан, гранола, қантсыз және ұлттық тағам өнімдері."
+      title: "Талқан, гранола және табиғи өнімдер — DALA DAMI",
+      description: "Қазақстанда өндірілген DALA DAMI тары талқаны мен граноласы — пайдалы таңғы ас пен жеңіл асқа арналған табиғи өнімдер."
     },
     lang: { aria: "Тілді таңдау" },
     nav: {
@@ -323,7 +369,7 @@ const TRANSLATIONS = {
     },
     hero: {
       label: "DALA DAMI ЭКО ӨНІМДЕРІ",
-      title: "Премиум сапалы табиғи өнімдер",
+      title: "Талқан, гранола және табиғи өнімдер",
       description: "Таза құрам, мұқият таңдалған шикізат және саналы тамақтануға арналған ұқыпты өндіріс.",
       catalogBtn: "Каталогқа өту",
       orderBtn: "Тапсырыс беру",
@@ -335,6 +381,29 @@ const TRANSLATIONS = {
     about: {
       title: "Компания туралы",
       text: "DALA DAMI — тарыдан жасалатын табиғи азық-түлік өнімдерін өндіруге маманданған компания. Біз экологиялық таза өндіріске, жоғары сапалы шикізатқа және әр өнімнің табиғи пайдасын сақтауға ұқыпты көзқарасқа басымдық береміз.\n\nБіздің негізгі бағытымыз — салауатты өмір салтын, табиғи құрамды және саналы тамақтануды таңдайтын адамдарға арналған пайдалы өнімдер жасау. Біздің өнімдерде артық ештеңе жоқ: тек мұқият іріктелген ингредиенттер, табиғи дәм және бүкіл отбасыға арналған пайда. Біз қантсыз өнімдерге ерекше көңіл бөліп, дұрыс әрі теңгерімді тамақтанудың заманауи талаптарына сүйенеміз.\n\nСонымен қатар, DALA DAMI ұлттық тағам өнімдері бағытын дамыта отырып, дәстүрмен байланысын сақтайды. Біз табиғилықты, заманауи сапа стандарттарын және мәдениетке деген құрметті біріктіріп, тұтынушыларға күн сайын пайдалы, дәмді және лайықты өнім ұсынуға тырысамыз."
+    },
+    productGuide: {
+      eyebrow: "DALA DAMI ТАБИҒИ ӨНІМДЕРІ",
+      title: "Таңғы ас пен жеңіл асқа арналған талқан және гранола",
+      lead: "Дәмі мен пішімі әртүрлі екі бағыт: тарыдан жасалған дәстүрлі талқан және табиғи ингредиенттері бар қытырлақ гранола.",
+      talkanAlt: "DALA DAMI тары талқаны",
+      talkanLabel: "ТАРЫДАН ЖАСАЛҒАН ДӘСТҮРЛІ ӨНІМ",
+      talkanTitle: "Тары талқаны",
+      talkanText: "Таңғы асқа, жеңіл асқа, ботқа мен сусындарға арналған қуырылған және ұсақталған дән.",
+      talkanVariants: "Үш дәм:",
+      classicLink: "Классикалық",
+      almondLink: "Бадаммен",
+      hazelnutLink: "Орман жаңғағымен",
+      granolaAlt: "DALA DAMI граноласы",
+      granolaLabel: "ҚЫТЫРЛАҚ ТАҢҒЫ АС ЖӘНЕ ЖЕҢІЛ АС",
+      granolaTitle: "DALA DAMI граноласы",
+      granolaText: "Пісірілген сұлы үлпектері, тары, жаңғақтар мен дәндерді жеке немесе йогурт пен сүтке қосып жеуге болады.",
+      granolaVariants: "Үш түрі:",
+      nutsLink: "Жаңғақты",
+      superfoodLink: "Суперфуд",
+      chocolateLink: "Шоколадты",
+      catalogBtn: "Толық каталогты көру",
+      orderBtn: "Қалай тапсырыс беру"
     },
     catalog: {
       title: "Өнімдер каталогы",
@@ -443,8 +512,8 @@ const TRANSLATIONS = {
   },
   zh: {
     meta: {
-      title: "DALA DAMI — 哈萨克斯坦天然小米食品",
-      description: "DALA DAMI 生产哈萨克斯坦天然小米食品，包括塔尔坎、格兰诺拉麦片、无糖产品和传统食品。"
+      title: "塔尔坎、格兰诺拉麦片与天然食品 — DALA DAMI",
+      description: "来自哈萨克斯坦的 DALA DAMI 小米塔尔坎与格兰诺拉麦片，适合营养早餐和轻便加餐。"
     },
     lang: { aria: "语言选择" },
     nav: {
@@ -462,7 +531,7 @@ const TRANSLATIONS = {
     },
     hero: {
       label: "DALA DAMI 生态食品",
-      title: "高品质天然食品",
+      title: "塔尔坎、格兰诺拉麦片与天然食品",
       description: "严选原料、干净配方与细致工艺，为重视健康与品质的日常饮食而设计。",
       catalogBtn: "查看商品",
       orderBtn: "立即下单",
@@ -474,6 +543,29 @@ const TRANSLATIONS = {
     about: {
       title: "关于品牌",
       text: "DALA DAMI 是一家专注于生产天然小米食品的公司。我们坚持环保洁净的生产方式、优质原料，并以细致严谨的态度保留每一款产品的天然营养价值。\n\n我们的核心方向，是为选择健康生活方式、天然配方与理性饮食的人们打造有益健康的食品。我们的产品没有多余成分，只有甄选原料、自然风味，以及适合全家人的营养价值。我们也特别重视无糖产品，以回应当代消费者对健康均衡饮食的需求。\n\n与此同时，DALA DAMI 也持续传承传统，发展民族特色食品方向。我们将天然、本真的理念，现代质量标准，以及对文化的尊重结合起来，为消费者提供适合每日享用的健康、美味且值得信赖的产品。"
+    },
+    productGuide: {
+      eyebrow: "DALA DAMI 天然食品",
+      title: "适合早餐与加餐的塔尔坎和格兰诺拉麦片",
+      lead: "两种不同风味与形式的选择：传统小米塔尔坎，以及采用天然食材制作的香脆格兰诺拉麦片。",
+      talkanAlt: "DALA DAMI 小米塔尔坎",
+      talkanLabel: "传统小米食品",
+      talkanTitle: "小米塔尔坎",
+      talkanText: "烘烤后细磨的谷物，适合早餐、日常加餐，也可加入粥品和饮品中。",
+      talkanVariants: "三种口味：",
+      classicLink: "原味",
+      almondLink: "杏仁味",
+      hazelnutLink: "榛子味",
+      granolaAlt: "DALA DAMI 格兰诺拉麦片",
+      granolaLabel: "香脆早餐与加餐",
+      granolaTitle: "DALA DAMI 格兰诺拉麦片",
+      granolaText: "烘焙燕麦、小米、坚果和种子，可直接食用，也可搭配酸奶或牛奶。",
+      granolaVariants: "三种选择：",
+      nutsLink: "坚果味",
+      superfoodLink: "超级食物",
+      chocolateLink: "巧克力味",
+      catalogBtn: "查看全部商品",
+      orderBtn: "订购方式"
     },
     catalog: {
       title: "商品目录",
@@ -620,11 +712,48 @@ init();
 
 function init() {
   bindGlobalEvents();
+  bindAnalyticsEvents();
   bindForms();
   bindPhoneMasks();
   bindLanguageSwitcher();
   setLanguage(currentLang);
   document.getElementById("currentYear").textContent = new Date().getFullYear();
+}
+
+function bindAnalyticsEvents() {
+  document.querySelectorAll("[data-track-product]").forEach((link) => {
+    link.addEventListener("click", () => {
+      sendAnalyticsEvent("product_interest", {
+        product_family: link.dataset.productFamily,
+        product_name: link.dataset.trackProduct,
+        language: currentLang
+      });
+    });
+  });
+
+  document.querySelectorAll("[data-track-action]").forEach((link) => {
+    link.addEventListener("click", () => {
+      sendAnalyticsEvent("content_action", {
+        action_name: link.dataset.trackAction,
+        section_name: "product_guide",
+        language: currentLang
+      });
+    });
+  });
+
+  document.querySelectorAll('a[href*="wa.me"]').forEach((link) => {
+    link.addEventListener("click", () => {
+      sendAnalyticsEvent("whatsapp_click", {
+        link_location: link.id || "website",
+        language: currentLang
+      });
+    });
+  });
+}
+
+function sendAnalyticsEvent(eventName, parameters) {
+  if (typeof window.gtag !== "function") return;
+  window.gtag("event", eventName, parameters);
 }
 
 function bindGlobalEvents() {
@@ -798,6 +927,10 @@ function bindForms() {
         form.reset();
         form.querySelectorAll("[data-phone]").forEach((input) => (input.value = ""));
         showFormMessage(message, t.form.messages.sent, "success");
+        sendAnalyticsEvent("generate_lead", {
+          lead_source: "website_order_form",
+          language: currentLang
+        });
       } catch (error) {
         showFormMessage(message, error.message || t.form.messages.sendError, "error");
       }
@@ -1041,14 +1174,32 @@ function openOrderModal() {
   updateOrderFields();
   orderModal.classList.add("is-open");
   orderModal.setAttribute("aria-hidden", "false");
+  if (isCartNotEmpty()) {
+    sendAnalyticsEvent("begin_checkout", {
+      items: getCartEntries().map(({ product, quantity }) => ({
+        item_id: product.id,
+        item_name: getLocalized(product.name),
+        quantity
+      }))
+    });
+  }
 }
 
 function addToCart(productId, quantity = 1) {
   if (!productMap.has(productId)) return;
 
-  cart[productId] = (cart[productId] || 0) + Math.max(1, quantity);
+  const normalizedQuantity = Math.max(1, quantity);
+  const product = productMap.get(productId);
+  cart[productId] = (cart[productId] || 0) + normalizedQuantity;
   persistCart();
   updateAll();
+  sendAnalyticsEvent("add_to_cart", {
+    items: [{
+      item_id: product.id,
+      item_name: getLocalized(product.name),
+      quantity: normalizedQuantity
+    }]
+  });
 }
 
 function changeQuantity(productId, delta) {
